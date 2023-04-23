@@ -1,0 +1,11 @@
+
+C:/xampp/apache/conf/httpd.conf
+Добавить:
+LoadModule lua_module modules/mod_lua.so
+<Files "*.lua">
+    SetHandler lua-script
+</Files>
+<IfModule dir_module>
+    DirectoryIndex index.lua
+</IfModule>
+
